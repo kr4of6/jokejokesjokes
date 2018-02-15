@@ -3,7 +3,9 @@
 /* NAV BAR */
 nav ul {
 	background-color: white;
-	position: relative;
+    position: relative;
+    margin: 0;
+    padding: 0 0px 0 0px;
 	/* top: 10px; */
 }
 nav ul li {
@@ -42,6 +44,10 @@ GRID
 
 body {
     font-size: 16px;
+}
+html {
+    height: 100%;
+    
 }
 
 .container {
@@ -84,7 +90,9 @@ div {
     grid-area: menu;
     background-color: rgb(124, 47, 47);
     color: #333;
-    
+}
+.menu .nav {
+    size: 100%;
 }
 
 .sidebarRight {
