@@ -6,17 +6,26 @@ nav ul {
 nav ul li {
 	float:left;
 	list-style-type: none;
-	background-color: white
+    background-color: black;
+    text-align: center;   
+    
+    width: 50%;
 }
 nav ul li a {
 	display: block;
 	color: black;
-	text-decoration: none;
+    text-decoration: none;
 	padding: 14px 16px;
-	font-size: 16px;
+    font-size: 16px;
+    color: white;
 }
 nav ul li a:hover {
-	background-color: black;
-	color: white;
+    background-color: white;
+    background-image: url("/lol.png");
+    background-repeat:no-repeat;
+    background-size: 10%;
+    background-position-x: 30%;
+    background-position-y: center;
+	color: black;
 	text-decoration: none;
 }
