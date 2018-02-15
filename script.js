@@ -33,7 +33,8 @@ $(document).ready(function () {
                 for(var i = 0 ; i < json.results.length ; i++)
                 {
                     console.log(json.results[i].joke);
-                    result +="<p>" + json.results[i].joke + "</p>";
+                    result +=`<div class="joke">` + json.results[i].joke + `</div>`;
+                    result += "<hr>"
                 }
                 $('#sResults').html(result);
             }
