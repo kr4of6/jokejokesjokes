@@ -30,11 +30,17 @@ $(document).ready(function () {
             dataType : "json",
             success : function(json)
             {
-                for(var i = 0 ; i < json.results.length ; i++)
-                {
-                    console.log(json.results[i].joke);
-                    result +=`<div class="joke">` + json.results[i].joke + `</div>`;
-                    result += "<hr>"
+
+                if (json.results.length === 0){
+                    result +=`<div class="joke">Sorry, no jokes found</div>`;
+                }else {
+
+                    for(var i = 0 ; i < json.results.length ; i++)
+                    {
+                        console.log(json.results[i].joke);
+                        result +=`<div class="joke">` + json.results[i].joke + `</div>`;
+                        result += "<hr>"
+                    }
                 }
                 $('#sResults').html(result);
             }
