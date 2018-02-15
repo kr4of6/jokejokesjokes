@@ -52,7 +52,7 @@ html {
 
 .container {
     display: grid;
-
+    background-color: #EFEFEF;
     /*  Define the size and number of columns in our grid. 
     The fr unit works similar to flex:
     fr columns will share the free space in the row in proportion to their value.
@@ -73,7 +73,17 @@ html {
     /*  The gutters between each grid cell will be 60 pixels. */
     grid-gap: 5px;
 }
-
+button{
+    margin: 30px 0px;
+    padding:1em;
+    background-color: #4c00ff;
+    border: none;
+    text-align: center;
+    /* border-radius: 4px; */
+    font-size: 32px;
+    color:white;
+    box-shadow: 3px 3px 2px grey;
+}
 div {
     text-align: center;
     color: #fff;
