@@ -1,0 +1,22 @@
+nav ul {
+	background-color: white;
+	position: relative;
+	top: 10px;
+}
+nav ul li {
+	float:left;
+	list-style-type: none;
+	background-color: white
+}
+nav ul li a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 16px;
+}
+nav ul li a:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
