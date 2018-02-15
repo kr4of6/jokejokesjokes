@@ -11,7 +11,7 @@ $(document).ready(function () {
             success : function(json)
             {
                 console.log(json.joke);
-                result +="<p>" + json.joke + "</p>";
+                result +=`<div class="joke">` + json.joke + `</div>`;
                 $('#rResults').html(result);
             }
         });

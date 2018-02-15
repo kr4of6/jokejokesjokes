@@ -58,6 +58,7 @@ html {
     fr columns will share the free space in the row in proportion to their value.
     We will have 2 columns - the first will be 3x the size of the second.  */
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr .5fr 6fr 1fr;
 
     /*  Assign the grid areas we did earlier to specific places on the grid. 
         First row is all header.
@@ -70,7 +71,7 @@ html {
     "footer footer footer";
 
     /*  The gutters between each grid cell will be 60 pixels. */
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 div {
@@ -88,8 +89,8 @@ div {
 
 .menu {
     grid-area: menu;
-    background-color: rgb(124, 47, 47);
-    color: #333;
+    /* background-color: rgb(124, 47, 47); */
+    /* color: #333; */
 }
 .menu .nav {
     size: 100%;
@@ -97,18 +98,18 @@ div {
 
 .sidebarRight {
     grid-area: sidebarRight;
-    background-color: #BDD4DE;
+    /* background-color: #BDD4DE; */
     color: #333;
 }
 .sidebarLeft {
     grid-area: sidebarLeft;
-    background-color: #BDD4DE;
+    /* background-color: #BDD4DE; */
     color: #333;
 }
 
 .main {
     grid-area: main;
-    background-color: #EFEFEF;
+    /* background-color: #EFEFEF; */
     color: #333;
 }
 
@@ -116,4 +117,13 @@ div {
     grid-area: footer;
     background-color: #2B3A42;
     height: 80px;
+}
+
+/*  JOKE */
+
+.joke{
+    color:black;
+    font-size:32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height:100%;
 }
