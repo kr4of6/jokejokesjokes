@@ -50,7 +50,8 @@ $(document).ready(function () {
     {
         var result = "";
         e.preventDefault();
-        var myurl = "http://api.giphy.com/v1/gifs/search?q=fun&api_key=G6b28WhJndDhJ5p2Ey4LNR0eGGRkQFHg&limit=5";  
+        var value = $('#searchText').val();
+        var myurl = "http://api.giphy.com/v1/gifs/search?q="+value+ "&api_key=G6b28WhJndDhJ5p2Ey4LNR0eGGRkQFHg&limit=5";  
         $.ajax({
             url : myurl,
             dataType : "json",
